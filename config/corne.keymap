@@ -83,7 +83,7 @@
         //};
 
         RectangleKey {
-            bindings = <&kp LA(LC(LS(LEFT_COMMAND)))>;
+            bindings = <&mo 7>;
             key-positions = <2 3>;
             layers = <0>;
         };
