@@ -96,10 +96,10 @@
 
         BASE {
             bindings = <
-&kp TAB     &kp Q              &kp W                &kp E                       &kp R                       &kp T        &kp Y             &kp U                       &kp I             &kp O                 &kp P                      &kp BACKSPACE
-&kp ESCAPE  &hmr LEFT_SHIFT A  &hmr LEFT_CONTROL S  &hmr LEFT_ALT D             &hmr LEFT_COMMAND F         &kp G        &kp H             &hmr LEFT_COMMAND J         &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON  &lt 4 SQT
-&kp GRAVE   &lt 2 Z            &kp X                &kp C                       &kp V                       &kp B        &kp N             &kp M                       &kp COMMA         &kp DOT               &lt 2 SLASH                &kp BACKSLASH
-                                                    &mt LEFT_COMMAND BACKSPACE  &lt_hold_preferred 3 SPACE  &kp ENTER    &mt RSHIFT ENTER  &lt_hold_preferred 2 SPACE  &lt 1 BACKSPACE
+&kp TAB     &kp Q              &kp W                &kp E                       &kp R                       &kp T        &kp Y             &kp U                &kp I             &kp O                 &kp P                      &kp BACKSPACE
+&kp ESCAPE  &hmr LEFT_SHIFT A  &hmr LEFT_CONTROL S  &hmr LEFT_ALT D             &hmr LEFT_COMMAND F         &kp G        &kp H             &hmr LEFT_COMMAND J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON  &lt 4 SQT
+&kp GRAVE   &lt 2 Z            &kp X                &kp C                       &kp V                       &kp B        &kp N             &kp M                &kp COMMA         &kp DOT               &lt 2 SLASH                &kp BACKSLASH
+                                                    &mt LEFT_COMMAND BACKSPACE  &lt_hold_preferred 3 SPACE  &kp ENTER    &mt RSHIFT ENTER  &mo 2                &lt 1 BACKSPACE
             >;
 
             label = "base layer";
@@ -128,10 +128,10 @@
 
         NUM {
             bindings = <
-&trans        &none  &kp LEFT_PARENTHESIS  &kp UP_ARROW  &kp RIGHT_PARENTHESIS  &none               &kp PERIOD  &kp N7        &kp N8        &kp N9        &none         &kp BACKSPACE
-&trans        &none  &kp LEFT              &kp DOWN      &kp RIGHT              &kp LA(UP_ARROW)    &kp PLUS    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &none
-&kp CAPSLOCK  &none  &none                 &none         &none                  &kp LA(DOWN)        &kp MINUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
-                                           &none         &kp SPACE              &kp ENTER           &kp ENTER   &lt 5 SPACE   &kp N0
+&trans  &none         &kp LEFT_PARENTHESIS  &kp UP_ARROW  &kp RIGHT_PARENTHESIS  &none               &none      &kp N7        &kp N8        &kp N9        &none         &kp BACKSPACE
+&trans  &none         &kp LEFT              &kp DOWN      &kp RIGHT              &kp LA(UP_ARROW)    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &none
+&none   &kp CAPSLOCK  &none                 &none         &none                  &kp LA(DOWN)        &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &none
+                                            &trans        &none                  &kp ENTER           &kp ENTER  &lt 5 PERIOD  &kp N0
             >;
 
             label = "numpad layer";
@@ -139,10 +139,10 @@
 
         SYS {
             bindings = <
-&none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none             &soft_off  &pw                   &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT  &none
-&none  &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none             &none      &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &none             &none       &none
-&none  &none  &none         &none         &bt BT_CLR    &bt BT_CLR_ALL    &none      &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &none             &none       &none
-                            &none         &none         &none             &none      &none                 &kp LS(LEFT_ALT)
+&none  &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &none             &soft_off  &pw                   &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT  &none
+&none  &none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none             &none      &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &none             &none       &none
+&none  &none  &none          &none          &bt BT_CLR     &bt BT_CLR_ALL    &none      &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &none             &none       &none
+                             &none          &none          &none             &none      &none                 &kp LS(LEFT_ALT)
             >;
 
             label = "system";
@@ -151,10 +151,10 @@
         SYM {
             label = "symbol layer";
             bindings = <
-&trans      &kp EXCL  &kp LESS_THAN         &kp PLUS   &kp GREATER_THAN        &none        &none      &kp LEFT_BRACKET  &kp EQUAL       &kp RIGHT_BRACKET  &none      &kp BACKSPACE
-&kp ESCAPE  &kp AT    &kp LEFT_PARENTHESIS  &kp MINUS  &kp RIGHT_PARENTHESIS   &kp GRAVE    &kp TILDE  &kp LEFT_BRACE    &kp UNDERSCORE  &kp RIGHT_BRACE    &kp CARET  &none
-&none       &none     &kp HASH              &kp PIPE   &kp DOLLAR              &none        &none      &kp PERCENT       &kp AMPS        &kp BACKSLASH      &none      &none
-                                            &none      &mt LEFT_COMMAND SPACE  &kp ENTER    &kp ENTER  &none             &kp BACKSPACE
+&trans      &none   &kp LEFT_PARENTHESIS  &kp PLUS   &kp RIGHT_PARENTHESIS   &none              &none      &kp LEFT_BRACKET  &kp EQUAL       &kp RIGHT_BRACKET  &none      &kp BACKSPACE
+&kp ESCAPE  &kp AT  &kp LESS_THAN         &kp MINUS  &kp GREATER_THAN        &kp EXCLAMATION    &kp GRAVE  &kp LEFT_BRACE    &kp UNDERSCORE  &kp RIGHT_BRACE    &kp TILDE  &none
+&none       &none   &kp HASH              &kp PIPE   &kp DOLLAR              &none              &none      &kp PERCENT       &kp AMPS        &kp CARET          &none      &none
+                                          &trans     &mt LEFT_COMMAND SPACE  &kp ENTER          &kp ENTER  &none             &kp BACKSPACE
             >;
         };
 
@@ -167,6 +167,17 @@
             >;
 
             label = "scroll layer";
+        };
+
+        REC {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &kp LG(LA(LC(LS(R))))  &kp LG(LA(LS(LC(R))))  &kp LG(LA(LC(LS(M))))  &kp LG(LA(LC(LS(T))))  &none  &none
+&none  &none  &none  &none  &none  &none    &kp LC(LA(LS(LG(O))))  &kp LG(LA(LC(LS(J))))  &kp LG(LA(LC(LS(C))))  &kp LG(LA(LC(LS(L))))  &none  &none
+&none  &none  &none  &none  &none  &none    &kp LG(LA(LC(LS(U))))  &kp LG(LA(LC(LS(F))))  &kp LG(LA(LC(LS(H))))  &kp LG(LA(LS(LC(G))))  &none  &none
+                     &none  &none  &none    &none                  &none                  &none
+            >;
+
+            label = "rectangle app layer";
         };
     };
 };
